@@ -1,0 +1,19 @@
+{
+  "package": {
+    "productName": "Lotus Menu",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Lotus Menu",
+        "width": 450,
+        "height": 240
+      }
+    ],
+    "bundle": {
+      "identifier": "com.example.lotus"
+    }
+  }
+}
