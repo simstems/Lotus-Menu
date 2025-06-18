@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lotus Menu</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <button id="browse">Browse Folder</button>
+    <script src="https://unpkg.com/@tauri-apps/api@1.5.0/dist/index.umd.js"></script>
+    <script>
+        const { invoke } = window.__TAURI__.tauri;
+        document.getElementById('browse').addEventListener('click', () => {
+            invoke('open_folder', { path: 'Directory' });
+        });
+    </script>
+</body>
+</html>
